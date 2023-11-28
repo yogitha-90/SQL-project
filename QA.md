@@ -8,3 +8,7 @@ QA Process:
 Describe your QA process and include the SQL queries used to execute it.
 removing duplicates from allsessions table:
 sql 
+select distinct on (fullvisitorid)*
+from allsessions
+
+
