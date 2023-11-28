@@ -29,6 +29,7 @@ SQL Queries:select cast(avg(a.totalproductssold) as int)as avgproductssold, a.ci
 city,country from allsessions
 group by city,country) a group by a.city, a.country
 having avg(a.totalproductssold)<> 0;
+![6C036AC1-30F5-4713-A9FE-5C2324CFEF09](https://github.com/yogitha-90/SQL-project/assets/145248979/927cafd8-39a4-4fed-96ad-897770294c3c)
 
 
 
