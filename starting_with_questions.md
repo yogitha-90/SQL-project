@@ -8,7 +8,7 @@ SQL Queries:
 
 
 
-Answer:
+Answer:![C7FD0065-8202-45BA-8B2C-79D9DB0217C2](https://github.com/yogitha-90/SQL-project/assets/145248979/1b17fde8-8fd2-4a21-be71-475bae98ba5a)
 
 
 
@@ -25,7 +25,7 @@ having avg(a.totalproductssold)<> 0;
 
 
 
-Answer:/Users/yogithakandhi/Pictures/Photos Library.photoslibrary/originals/C/C7FD0065-8202-45BA-8B2C-79D9DB0217C2.jpeg
+
 
 
 
