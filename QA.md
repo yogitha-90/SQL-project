@@ -12,6 +12,13 @@ select distinct on (fullvisitorid)*
 from allsessions
 
 
+select country,sum(totaltransactionrevenue) as countryrevenue from allsessions
+where totaltransactionrevenue is not null
+group by country, totaltransactionrevenue
+having totaltransactionrevenue>11531530000;
+
+
+
 
 
 
