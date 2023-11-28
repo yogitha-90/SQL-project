@@ -86,22 +86,41 @@ limit 3;
 
 
 SQL Queries:
+creating a cte table
 
+with salebycountry as (select country, city, p.name as productname,
+sum(orderedquantity)as totalproducts,
+rank()over (partition by country, city order by sum(orderedquantity)desc)as rank
+from allsessions s
+join products p on s.productsku=p.sku
+group by country,city,p.name
+order by country,city)
+selecting highest selling product with in each country and city.
 
+select country,city,productname
+from salebycountry
+where rank=1;
 
-Answer:
-
-
-
+![2D8776BF-1160-4689-BF1C-A17D5AA64687](https://github.com/yogitha-90/SQL-project/assets/145248979/a07da32f-ac77-4d49-9e66-b42d391c9c34)
 
 
 **Question 5: Can we summarize the impact of revenue generated from each city/country?**
 
 SQL Queries:
+select country,city,
+sum(totaltransactionrevenue)as revenue
+from allsessions
+group by country,city
+having sum(totaltransactionrevenue)<>0;
+
+only 81 records of 15000 records have the data, these are the results obtained by them
+
+![F486E08B-C501-4272-B0D0-E161E94EDF9C](https://github.com/yogitha-90/SQL-project/assets/145248979/16320bb0-4664-4c4e-a521-90f96406c6dd)
 
 
 
-Answer:
+
+
 
 
 
