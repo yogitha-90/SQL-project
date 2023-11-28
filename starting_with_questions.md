@@ -16,7 +16,12 @@ Answer:
 **Question 2: What is the average number of products ordered from visitors in each city and country?**
 
 
-SQL Queries:
+SQL Queries:select cast(avg(a.totalproductssold) as int)as avgproductssold, a.city,a.country from 
+(select sum (productquantity)as totalproductssold,
+city,country from allsessions
+group by city,country) a group by a.city, a.country
+having avg(a.totalproductssold)<> 0;
+
 
 
 
