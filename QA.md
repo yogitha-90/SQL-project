@@ -11,9 +11,7 @@ sql
 select distinct on (fullvisitorid)*
 from allsessions
 
- What is the average number of products ordered from visitors in each city and country?**
-to check the result rendered from this query is true then when calculated for columbia, the value should return 1
-SQL 
+
 
 
 
