@@ -25,7 +25,8 @@ having avg(a.totalproductssold)<> 0;
 
 
 
-Answer:
+Answer:/Users/yogithakandhi/Pictures/Photos Library.photoslibrary/originals/C/C7FD0065-8202-45BA-8B2C-79D9DB0217C2.jpeg
+
 
 
 
