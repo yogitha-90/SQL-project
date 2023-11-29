@@ -45,6 +45,13 @@ drop column itemquantity;
 
 With regards to analysis table:
 
+Change visitstarttime:
+
+select to_timestamp(cast(visitstarttime as integer))::time as convertedtime
+from analytics
+limit 10;
+
+
 Updated the unit price by dividing the unit price/1000000
 update analytics
 set unitprice=unitprice/1000000;
@@ -53,13 +60,3 @@ Deleting the column userid
 alter table analytics
 drop column userid;
 
-
-
-
-
-
-
-
-
-Queries:
-Below, provide the SQL queries you used to clean your data.
