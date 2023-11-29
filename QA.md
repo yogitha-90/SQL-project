@@ -3,7 +3,9 @@ What are your risk areas? Identify and describe them.
 Risk areas:
 
 The data provided was not accurate,it had several duplictes and null rows
+
 To get accurate results Duplicates much be removed, so that the unique id's can be identified.
+
 Data types should be matched perfectly to prevent any errors.
 
 
@@ -47,6 +49,24 @@ having totaltransactionrevenue>11531530000;
 
 
 Thus proving above code to be accurate.
+
+
+In allsessions table,
+
+Products quantity should be greater than 0, for example:
+
+```Sql
+select productquantity 
+from allsessions
+where productquantity < 0;
+```
+which results in
+![F410D4B6-AD7B-4F34-A7A7-58CBEC7CD5AD](https://github.com/yogitha-90/SQL-project/assets/145248979/8dd8c0d7-fb80-4185-b2da-2d5fe06f1f61)
+
+therefore, it's accurate..
+
+Smilarly checked the data for ordered quantity, stocklevel etc from produts table, unitprice from analytics table it rendered null result.
+
 
 
 
