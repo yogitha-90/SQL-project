@@ -263,3 +263,8 @@ where totaltransactionrevenue <> 0;
 
 ## Future Goals
 // I would investigate furthe and invest additional time to analyse the data and create several business use cases.
+
+### ERD:
+
+![ERD Sql project](https://github.com/yogitha-90/SQL-project/assets/145248979/c55dce39-be73-42a4-a34d-451602bb334c)
+
