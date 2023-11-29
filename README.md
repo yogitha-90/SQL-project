@@ -1,4 +1,4 @@
-##Note: in Read.me,I highlited the procee, but every file has it's concerned data. Thank you!
+##Note: in Read.me,I highlited the process, but every file has it's concerned data. Thank you!
 
 
 
