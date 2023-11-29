@@ -246,8 +246,20 @@ having sum(totaltransactionrevenue)<>0;
 
 ## Challenges 
 // Cleaning the data was one of the biggest challenge
+
 //Understanding the data and changing the datatypes as required
-//information was missing in number of cells.. for example to calculate the revenue we had only 81 rows of 15000 recodrs, thus I had to QA for every code to check if the answer is correct.
+
+//information was missing in number of cells.. for example to calculate the revenue we had very few rows 15000 recodrs, thus I had to QA for every code to check if the answer is correct.
+
+//for example: 
+
+//to count the total number of rows with info for totaltransactioncolumn for table allsessions
+
+```SQL
+select count(totaltransactionrevenue)
+from allsessions
+where totaltransactionrevenue <> 0;
+```
 
 ## Future Goals
-(what would you do if you had more time?)
+// I would investigate furthe and invest additional time to analyse the data and create several business use cases.
