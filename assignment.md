@@ -51,6 +51,9 @@ In the **QA.md** file, identify and describe your risk areas. Develop and execut
 
 Inside pgAdmin, you can generate the ERD for the database. 
 
+![ERD Sql project](https://github.com/yogitha-90/SQL-project/assets/145248979/c55dce39-be73-42a4-a34d-451602bb334c)
+
+
 ![](https://i.imgur.com/KxVRJD3.png)
 
 Download the image and save it as **schema.png**. Add this file to your repo for submission.
