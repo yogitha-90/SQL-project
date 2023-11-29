@@ -1,3 +1,7 @@
+##Note: in Read.me,I highlited the procee, but every file has it's concerned data. Thank you!
+
+
+
 # Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
 ## Project/Goals
