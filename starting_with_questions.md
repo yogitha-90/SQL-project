@@ -5,18 +5,14 @@ Answer the following questions and provide the SQL queries used to find the answ
 
 
 SQL Queries:
-select city,country, max(totaltransactionrevenue) as totalrevenue
-from allsessions
-where totaltransactionrevenue is not null
-group by city, country
-order by max(totaltransactionrevenue) desc;
-
-![image](https://github.com/yogitha-90/SQL-project/assets/145248979/b8b26cd6-63ff-470b-bf4a-eadf1d8acb3f)
+select country, city, totalrevenue
+from (select country,city, max(totaltransactionrevenue)as totalrevenue,
+	 Rank() over (partition by country order by max(totaltransactionrevenue)desc)as Rank
+	 from allsessions where totaltransactionrevenue is not null group by country,city)as sub
+	 where rank=1;
 
 
-
-
-Answer:![C7FD0065-8202-45BA-8B2C-79D9DB0217C2](https://github.com/yogitha-90/SQL-project/assets/145248979/1b17fde8-8fd2-4a21-be71-475bae98ba5a)
+![EDA49EA6-0BA7-425D-8B0D-63118F6A987D](https://github.com/yogitha-90/SQL-project/assets/145248979/20c6c98d-064a-4141-b29f-e76641a56efb)
 
 
 
