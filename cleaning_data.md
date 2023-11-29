@@ -1,6 +1,6 @@
 ##What issues will you address by cleaning the data?
 
-##adressing allsessions table
+##Adressing allsessions table
 
 //removing duplicates to achieve accurate results
 
