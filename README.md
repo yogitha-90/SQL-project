@@ -239,7 +239,7 @@ from allsessions
 group by country,city
 having sum(totaltransactionrevenue)<>0;
 ```
-//only 81 records of 15000 records have the data, these are the results obtained by them
+
 
 ![F486E08B-C501-4272-B0D0-E161E94EDF9C](https://github.com/yogitha-90/SQL-project/assets/145248979/16320bb0-4664-4c4e-a521-90f96406c6dd)
 
